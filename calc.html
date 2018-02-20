@@ -1,0 +1,107 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/master.css">
+        <link rel="text/javascript" href="./assignment2.js">
+        <title>Assignment 2</title>
+        <style media="screen">
+        h1{
+            text-align: center;
+        }
+            input{
+            width: 100%;
+            }
+            table{
+            width: 200px;
+            background: yellow;
+            }
+
+            #txtNumber{
+            width: 200px;
+            }
+        </style>
+    <script type="text/javascript">
+
+        function disp(val){
+            document.getElementById('txtNumber').value = val;
+        }
+        function math(val){
+            document.getElementById('txtNumber').value += val;
+        }
+        function calc(){
+            try{
+                disp(eval(document.getElementById("txtNumber").value));
+            }
+            catch(e){
+                disp('Error')
+            }
+        }
+
+        </script>
+
+    </head>
+
+    <body>
+        <div class="container">
+
+
+            <h1 class="mx-auto">Calculator</h1>
+
+
+            <table class="mx-auto">
+                <tr>
+                    <td colspan="5"><input type="text" id="txtNumber" name="txtNumber"></td>
+                </tr>
+                <tr>
+                    <td colspan="5"><input type="button" onclick='disp("")' value="Clear"/></td>
+                </tr>
+                <tr>
+                    <td><input type="button" onclick='math("1")' value="1"/></td>
+                    <td><input type="button" onclick='math("2")' value="2"/></td>
+                    <td><input type="button" onclick='math("3")' value="3"/></td>
+                    <td><input type="button" onclick='math("/")' value="/"/></td>
+                </tr>
+                <tr>
+                    <td><input type="button" onclick='math("4")' value="4"/></td>
+                    <td><input type="button" onclick='math("5")' value="5"/></td>
+                    <td><input type="button" onclick='math("6")' value="6"/></td>
+                    <td><input type="button" onclick='math("*")' value="x"/></td>
+                </tr>
+                <tr>
+                    <td><input type="button" onclick='math("7")' value="7"/></td>
+                    <td><input type="button" onclick='math("8")' value="8"/></td>
+                    <td><input type="button" onclick='math("9")' value="9"/></td>
+                    <td><input type="button" onclick='math("-")' value="-"/></td>
+                </tr>
+                <tr>
+                    <td><input type="button" onclick='math("0")' value="0"/></td>
+                    <td><input type="button" onclick='math(".")' value="."/></td>
+                    <td><input type="button" onclick='calc()' value="="/></td>
+                    <td><input type="button" onclick='math("+")' value="+"/></td>
+                  </tr>
+            </table>
+
+        </div>
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
+
+
+
+
+
+
+    </body>
+</html>
